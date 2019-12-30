@@ -1,0 +1,12 @@
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\bin\Debug\netstandard2.0\Marathon.deps.json
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\bin\Debug\netstandard2.0\Marathon.dll
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\bin\Debug\netstandard2.0\ref\Marathon.dll
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\bin\Debug\netstandard2.0\Marathon.pdb
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.AssemblyInfoInputs.cache
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.AssemblyInfo.cs
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.dll
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\ref\Marathon.dll
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.pdb
