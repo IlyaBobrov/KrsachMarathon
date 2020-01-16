@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A4AA08A6-CCE9-4211-A677-6180D309CDBF}</ProjectGuid>
+    <ProjectGuid>{FBA63C8F-AEF5-42E7-B49C-972B1AE6C7B1}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -89,9 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Marathon\Marathon.csproj">
-      <Project>{F0F8E49D-3741-475B-92F8-721813FA43B2}</Project>
+      <Project>{39D7DCF4-9570-4571-8F0A-A6D2B6DA37A2}</Project>
       <Name>Marathon</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

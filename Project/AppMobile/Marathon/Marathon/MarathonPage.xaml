@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Marathon.MarathonPage">
+    
+    <ContentPage.Content>
+        <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="90" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <BoxView Color="White" Grid.Column="0" Grid.Row="0" Grid.RowSpan="6" />
+            <BoxView Color="White" Grid.Column="1" Grid.Row="0" />
+            <BoxView Color="White" Grid.Column="2" Grid.Row="0" />
+            <BoxView Color="White" Grid.Column="3" Grid.Row="0" />
+            <BoxView Color="WhiteSmoke" Margin="5" Grid.Column="1" Grid.Row="1" Grid.RowSpan="4"/>
+            <BoxView Color="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" />
+            <BoxView Color="White" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" />
+            <BoxView Color="White" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" />
+            <BoxView Color="White" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" />
+            <BoxView Color="White" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" />
+            <BoxView Color="#E5FEEB" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" />
+
+            <Label  Text="Photo" 
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.RowSpan="4"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="20" />
+
+            <Label  Text="status" 
+                Grid.Row="0"
+                Grid.Column="1"
+                Margin="5"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Label  Text="id:" 
+                Grid.Row="0"
+                Grid.Column="3"
+                HorizontalTextAlignment="Start"
+                Margin="10,0,0,0"
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Label  Text="Marathon name" 
+                Grid.Row="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="10"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Label  Text="info" 
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="10"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Start" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Label  Text="time" 
+                Grid.Row="3"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="10,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Label  Text="Location" 
+                Grid.Row="4"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="10,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+
+           
+
+            <Label  Text="Table" 
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Padding="10"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Start" 
+                TextColor="Gray"
+                FontSize="30" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

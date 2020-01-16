@@ -6,11 +6,113 @@
              mc:Ignorable="d"
              x:Class="Marathon.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Content>
+   
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            
+        </Grid.RowDefinitions>
 
+
+        <BoxView Color="WhiteSmoke" Margin="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <BoxView Color="White" Grid.Row="0" Grid.Column="2"  />
+        <BoxView Color="White" Grid.Row="1" Grid.Column="2"  />
+        <BoxView Color="#FDFFE0" Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="3"/>
+        <BoxView Color="White" Grid.Row="3" Grid.Column="0"  Grid.ColumnSpan="3" />
+        <BoxView Color="#E5FEEB" Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="3"  />
+
+
+            <Label  Text="LOGO" 
+                Grid.Row="0"
+                Padding="10"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.RowSpan="2"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="20" />
+
+            <Button Text="Enter/Exit" 
+                Grid.Row="0"
+                Grid.Column="2"
+                TextColor="Black"
+                FontSize="10"
+                BackgroundColor="LightGray"
+                Margin="5,10,10,2.5"
+                Padding="0"
+                Clicked="Button_Clicked_EE">
+
+            </Button>
+        
+            <Button  Text="Profile" 
+                Grid.Row="1"
+                Grid.Column="2"
+                TextColor="Black"
+                FontSize="10"
+                Margin="5,2.5,10,10"
+                Padding="0"
+                BackgroundColor="LightGray"
+                BorderWidth="0"
+                Clicked="Button_Clicked_Profile">
+
+            </Button>
+
+
+
+            <Label  Text="- - description - -" 
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Label  Text="Marathons" 
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Padding="10"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Start" 
+                TextColor="Gray"
+                FontSize="30" />
+
+            <Button Text="test url" 
+                Grid.Row="3"
+                Grid.Column="0"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                Margin="10"
+                Padding="0"
+                FontSize="10"
+                Clicked="Button_Clicked_Test_UR">
+
+            </Button>
+            <Button Text="url Admin" 
+                Grid.Row="3"
+                Grid.Column="1"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                Margin="10"
+                Padding="0"
+                FontSize="10"
+                Clicked="Button_Clicked_Admin">
+
+            </Button>
+        </Grid>
+    
+
+    </ContentPage.Content>
 </ContentPage>

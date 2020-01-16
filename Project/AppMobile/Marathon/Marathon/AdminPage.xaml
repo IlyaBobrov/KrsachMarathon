@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Marathon.AdminPage">
+    <ContentPage.Content >
+
+        <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <BoxView Color="White" Grid.Column="0" Grid.Row="0" Grid.RowSpan="7" />
+            <BoxView Color="White" Grid.Column="1" Grid.Row="0" />
+            <BoxView Color="White" Grid.Column="2" Grid.Row="0" />
+            <BoxView Color="White" Grid.Column="3" Grid.Row="0" />
+            <BoxView Color="WhiteSmoke" Margin="5" Grid.Column="1" Grid.Row="1" Grid.RowSpan="4"/>
+            <BoxView Color="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" />
+            <BoxView Color="White" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" />
+            <BoxView Color="White" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" />
+            <BoxView Color="White" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" />
+            <BoxView Color="White" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" />
+            <BoxView Color="#E5FEEB" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" />
+
+            <Label  Text="Photo" 
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.RowSpan="4"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="20" />
+
+            <Button  Text="Edit profile" 
+                Grid.Column="1" 
+                Grid.Row="5" 
+                FontSize="10"
+                Margin="5,5,5,10"
+                Padding="0"
+                TextColor="Gray"
+                BackgroundColor="WhiteSmoke"
+                Clicked="Button_Clicked_2">
+
+            </Button>
+
+            <Label  Text="id:" 
+                Grid.Row="0"
+                Grid.Column="3"
+                    Margin="10,0,0,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Label  Text="Admin name" 
+                Grid.Row="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="10"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Label  Text="login" 
+                Grid.Row="2"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="10,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+            <Button  Text="Create marathon" 
+                Grid.Row="3"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="10,0"
+                TextColor="Gray"
+                FontSize="12"
+                Margin="5,5,5,2.5"     
+                BackgroundColor="#E5FEEB"
+                
+                Clicked="Button_Clicked">
+            </Button>
+
+            <Button Text="Show inventory" 
+                Grid.Row="4"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="0"
+                Margin="5,2.5,5,5"
+                BackgroundColor="#FAFFDE"
+                FontSize="12"
+                TextColor="Gray"
+                Clicked="Button_Clicked_1">
+            </Button>
+
+
+            <Label  Text="Table" 
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Padding="10"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Start" 
+                TextColor="Gray"
+                FontSize="30" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

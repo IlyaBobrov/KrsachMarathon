@@ -10,7 +10,12 @@ namespace Marathon
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("##FFF5F5F5"),
+                BarTextColor = Color.FromHex("#FF808080")
+            };
+            
         }
 
         protected override void OnStart()
