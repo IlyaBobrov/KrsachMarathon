@@ -8,7 +8,7 @@ namespace Marathon
 {
     public partial class App : Application
     {
-        public const string DATABASE_NAME = "UsersBD.db";
+        public const string DATABASE_NAME = "UsersBD.sqlite";
 
         public static UsersClassAsyncRepository database;
         public static UsersClassAsyncRepository Database

@@ -11,11 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="UsersBD.db" />
+    <None Remove="UsersBD.sqlite" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="UsersBD.db" />
+    <EmbeddedResource Include="UsersBD.sqlite" />
   </ItemGroup>
 
   <ItemGroup>
