@@ -36,7 +36,7 @@
             <BoxView Color="White" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" />
             <BoxView Color="#E5FEEB" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" />
 
-            <Label  Text="Photo" 
+            <Label  Text="Photo?" 
                 Grid.Row="1"
                 Grid.Column="1"
                 Grid.RowSpan="4"
@@ -45,16 +45,18 @@
                 TextColor="Gray"
                 FontSize="20" />
 
-            <Label  Text="status" 
+            
+
+            <Label  Text="id:" 
                 Grid.Row="0"
-                Grid.Column="1"
-                Margin="5"
-                HorizontalTextAlignment="Start" 
+                Grid.Column="2"
+                HorizontalTextAlignment="End"
+                Margin="10,0,0,0"
                 VerticalTextAlignment="Center" 
                 TextColor="Black"
                 FontSize="15" />
-
-            <Label  Text="id:" 
+            
+            <Label  Text="{Binding Id}" 
                 Grid.Row="0"
                 Grid.Column="3"
                 HorizontalTextAlignment="Start"
@@ -63,7 +65,7 @@
                 TextColor="Black"
                 FontSize="15" />
 
-            <Label  Text="Marathon name" 
+            <Label  Text="{Binding Name}" 
                 Grid.Row="1"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
@@ -73,7 +75,7 @@
                 TextColor="Black"
                 FontSize="15" />
 
-            <Label  Text="info" 
+            <Label  Text="{Binding Text}" 
                 Grid.Row="2"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
@@ -83,7 +85,7 @@
                 TextColor="Black"
                 FontSize="15" />
 
-            <Label  Text="time" 
+            <Label  Text="{Binding Time}" 
                 Grid.Row="3"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
@@ -93,7 +95,7 @@
                 TextColor="Black"
                 FontSize="15" />
 
-            <Label  Text="Location" 
+            <Label  Text="{Binding }" 
                 Grid.Row="4"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"

@@ -18,9 +18,9 @@ namespace Marathon
             InitializeComponent();
         }
 
-        private async void Button_Clicked_Profile(object sender, EventArgs e)
+        private async void Button_Clicked_Create(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UserPage());
+            await Navigation.PushAsync(new Developer());
         }
 
         private void Button_Clicked_EE(object sender, EventArgs e)
