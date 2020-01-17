@@ -16,5 +16,24 @@ namespace Marathon
         {
             InitializeComponent();
         }
+        private async void SaveUser(object sender, EventArgs e)
+        {
+            var user = (User)BindingContext;
+            if (!String.IsNullOrEmpty(user.Name))
+            {
+                await App.Database.SaveItemAsync(user);
+            }
+            await this.Navigation.PopAsync();
+        }
+        private async void DeleteUser(object sender, EventArgs e)
+        {
+            var user = (User)BindingContext;
+            await App.Database.DeleteItemAsync(user);
+            await this.Navigation.PopAsync();
+        }
+        private async void Cancel(object sender, EventArgs e)
+        {
+            await this.Navigation.PopAsync();
+        }
     }
 }

@@ -7,9 +7,23 @@
              x:Class="Marathon.RegistrationPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Name" />
+            <Entry Text="{Binding Name}" />
+            <Label Text="Email" />
+            <Entry Text="{Binding Email}" />
+            <Label Text="Phone" />
+            <Entry Text="{Binding Phone}" />
+            <Label Text="Photo" />
+            <Entry Text="{Binding Photo}" />
+            <Label Text="Login" />
+            <Entry Text="{Binding Login}" />
+            <Label Text="Password" />
+            <Entry Text="{Binding Pass}" />
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Сохранить" Clicked="SaveUser" />
+                <Button Text="Удалить" Clicked="DeleteUser" />
+                <Button Text="Отмена" Clicked="Cancel" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

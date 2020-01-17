@@ -8,10 +8,12 @@ D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\UserPage.xaml.g.cs
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.AssemblyInfoInputs.cache
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.AssemblyInfo.cs
-D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.dll
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\ref\Marathon.dll
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.pdb
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Marathon.csprojAssemblyReference.cache
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\AdminPage.xaml.g.cs
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\RegistrationPage.xaml.g.cs
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\ListUsers.xaml.g.cs
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Developer.xaml.g.cs

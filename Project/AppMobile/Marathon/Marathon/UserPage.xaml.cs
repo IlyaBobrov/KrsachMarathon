@@ -18,9 +18,9 @@ namespace Marathon
             
         }
 
-        private async void Button_Clicked_Back(object sender, EventArgs e)
+        private void Button_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PopAsync();
+
         }
     }
 }
