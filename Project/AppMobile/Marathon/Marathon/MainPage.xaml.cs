@@ -38,5 +38,20 @@ namespace Marathon
             await Navigation.PushAsync(new AdminPage());
 
         }
+
+        private async void Button_Clicked_Reg(object sender, EventArgs e)
+        {
+            //User user = new User();
+            //RegistrationPage NewUserPage = new RegistrationPage();
+            //NewUserPage.BindingContext = user;
+            //await Navigation.PushAsync(new RegistrationPage());
+
+        }
+
+        private async  void Button_Clicked_Users(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ListUsers());
+
+        }
     }
 }

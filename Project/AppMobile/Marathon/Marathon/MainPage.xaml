@@ -51,7 +51,7 @@
                 BackgroundColor="LightGray"
                 Margin="5,10,10,2.5"
                 Padding="0"
-                Clicked="Button_Clicked_EE">
+                Clicked="Button_Clicked_Reg">
 
             </Button>
         
@@ -109,6 +109,18 @@
                 Padding="0"
                 FontSize="10"
                 Clicked="Button_Clicked_Admin">
+
+            </Button>
+        
+            <Button Text="Users" 
+                Grid.Row="3"
+                Grid.Column="2"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                Margin="10"
+                Padding="0"
+                FontSize="10"
+                Clicked="Button_Clicked_Users">
 
             </Button>
         </Grid>
