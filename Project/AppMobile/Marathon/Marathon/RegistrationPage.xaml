@@ -16,9 +16,9 @@
             <Label Text="Photo" />
             <Entry Text="{Binding Photo}" />
             <Label Text="Login" />
-            <Entry Text="{Binding Phone}" />
+            <Entry Text="{Binding Login}" />
             <Label Text="Password" />
-            <Entry Text="{Binding Phone}" />
+            <Entry Text="{Binding Pass}" />
             <StackLayout Orientation="Horizontal">
                 <Button Text="Сохранить" Clicked="SaveUser" />
                 <Button Text="Удалить" Clicked="DeleteUser" />

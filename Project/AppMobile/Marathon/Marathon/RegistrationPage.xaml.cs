@@ -16,27 +16,24 @@ namespace Marathon
         {
             InitializeComponent();
         }
-        private void SaveUser(object sender, EventArgs e)
+        private async void SaveUser(object sender, EventArgs e)
         {
             var user = (User)BindingContext;
-            if (!String.IsNullOrEmpty(user.Name) && 
-                !String.IsNullOrEmpty(user.Login) && 
-                !String.IsNullOrEmpty(user.Phone) && 
-                !String.IsNullOrEmpty(user.Login))
+            if (!String.IsNullOrEmpty(user.Name))
             {
-                App.Database.SaveItem(user);
+                await App.Database.SaveItemAsync(user);
             }
-            this.Navigation.PopAsync();
+            await this.Navigation.PopAsync();
         }
-        private void DeleteUser(object sender, EventArgs e)
+        private async void DeleteUser(object sender, EventArgs e)
         {
             var user = (User)BindingContext;
-            App.Database.DeleteItem(user.Id);
-            this.Navigation.PopAsync();
+            await App.Database.DeleteItemAsync(user);
+            await this.Navigation.PopAsync();
         }
-        private void Cancel(object sender, EventArgs e)
+        private async void Cancel(object sender, EventArgs e)
         {
-            this.Navigation.PopAsync();
+            await this.Navigation.PopAsync();
         }
     }
 }

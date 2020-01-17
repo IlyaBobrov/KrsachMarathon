@@ -16,27 +16,30 @@ namespace Marathon
         {
             InitializeComponent();
         }
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
-            UsersList.ItemsSource = App.Database.GetItems();
+            // создание таблицы, если ее нет
+            await App.Database.CreateTable();
+            // привязка данных
+            List_Users_t.ItemsSource = await App.Database.GetItemsAsync();
+
             base.OnAppearing();
         }
         // обработка нажатия элемента в списке
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            User selectedFriend = (User)e.SelectedItem;
-            UserPage friendPage = new UserPage();
-            friendPage.BindingContext = selectedFriend;
-            await Navigation.PushAsync(friendPage);
+            User selectedUser = (User)e.SelectedItem;
+            UserPage UserPage = new UserPage();
+            UserPage.BindingContext = selectedUser;
+            await Navigation.PushAsync(UserPage);
         }
         // обработка нажатия кнопки добавления
-        
         private async void CreateUser(object sender, EventArgs e)
         {
-            User user = new User();
-            RegistrationPage NewUserPage = new RegistrationPage();
-            NewUserPage.BindingContext = user;
-            await Navigation.PushAsync(NewUserPage);
+            User User = new User();
+            RegistrationPage RegistrationUser = new RegistrationPage();
+            RegistrationUser.BindingContext = User;
+            await Navigation.PushAsync(RegistrationUser);
         }
 
     }

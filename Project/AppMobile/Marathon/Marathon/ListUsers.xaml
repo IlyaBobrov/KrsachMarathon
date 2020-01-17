@@ -6,14 +6,13 @@
              mc:Ignorable="d"
              x:Class="Marathon.ListUsers" Title="Список пользователей" >
     <StackLayout>
-        <ListView x:Name="UsersList" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
+        <ListView x:Name="List_Users_t" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding Name}" FontSize="Medium" />
-                                <Label Text="{Binding Phone}" FontSize="Medium" HorizontalOptions="End"/>
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

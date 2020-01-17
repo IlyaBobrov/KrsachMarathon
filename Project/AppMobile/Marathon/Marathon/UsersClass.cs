@@ -5,19 +5,21 @@ using SQLite;
 
 namespace Marathon
 {
-    [Table("UsersClass")]
+    [Table("Users")]
     public class User
     {
         [PrimaryKey, AutoIncrement, Column("_id")]
         public int Id { get; set; }
-
+        [NotNull]
         public string Name { get; set; }
-        [Unique]
+        [NotNull, Unique]
         public string Email { get; set; }
-        public string Phone { get; set; }
+        [NotNull]
+        public int Phone { get; set; }
         public string Photo { get; set; }
-        [Unique]
+        [NotNull, Unique]
         public string Login { get; set; }
+        [NotNull]
         public string Pass { get; set; }
 
     }
