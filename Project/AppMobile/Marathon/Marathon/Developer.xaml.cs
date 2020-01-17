@@ -15,20 +15,21 @@ namespace Marathon
         public Developer()
         {
             InitializeComponent();
+            
         }
         protected override async void OnAppearing()
         {
             // создание таблицы, если ее нет
-            await App.DatabaseM.CreateTable();
+            await App.Database.CreateTable();
             // привязка данных
-            List_Marathon_t.ItemsSource = await App.DatabaseM.GetItemsAsync();
+            List_Marathon_t.ItemsSource = await App.Database.GetItemsAsync();
 
             base.OnAppearing();
         }
         // обработка нажатия элемента в списке
         private async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            MarathonClass selectedM = (MarathonClass)e.SelectedItem;
+            Marathon selectedM = (Marathon)e.SelectedItem;
             MarathonPage MPage = new MarathonPage();
             MPage.BindingContext = selectedM;
             await Navigation.PushAsync(MPage);
@@ -36,7 +37,7 @@ namespace Marathon
         // обработка нажатия кнопки добавления
         private async void Button_Clicked_CreateM(object sender, EventArgs e)
         {
-            MarathonClass M = new MarathonClass();
+            Marathon M = new Marathon();
             RegistrationPage RegistrationM = new RegistrationPage();
             RegistrationM.BindingContext = M;
             await Navigation.PushAsync(RegistrationM);

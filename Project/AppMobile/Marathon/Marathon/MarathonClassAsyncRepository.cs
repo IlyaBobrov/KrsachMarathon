@@ -17,22 +17,22 @@ namespace Marathon
 
         public async Task CreateTable()
         {
-            await databaseM.CreateTableAsync<MarathonClass>();
+            await databaseM.CreateTableAsync<Marathon>();
         }
-        public async Task<List<MarathonClass>> GetItemsAsync()
+        public async Task<List<Marathon>> GetItemsAsync()
         {
-            return await databaseM.Table<MarathonClass>().ToListAsync();
+            return await databaseM.Table<Marathon>().ToListAsync();
 
         }
-        public async Task<MarathonClass> GetItemAsync(int id)
+        public async Task<Marathon> GetItemAsync(int id)
         {
-            return await databaseM.GetAsync<MarathonClass>(id);
+            return await databaseM.GetAsync<Marathon>(id);
         }
-        public async Task<int> DeleteItemAsync(MarathonClass item)
+        public async Task<int> DeleteItemAsync(Marathon item)
         {
             return await databaseM.DeleteAsync(item);
         }
-        public async Task<int> SaveItemAsync(MarathonClass item)
+        public async Task<int> SaveItemAsync(Marathon item)
         {
             if (item.Id != 0)
             {

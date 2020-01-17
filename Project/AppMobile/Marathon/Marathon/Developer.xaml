@@ -12,10 +12,20 @@
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding Name}" FontSize="Medium" />
-                                <Label Text="{Binding Text}" FontSize="Medium" />
-                                <Label Text="{Binding Date}" FontSize="Medium" />
+                                <Label Text="{Binding Name}" 
+                                       FontSize="15" 
+                                       HorizontalOptions="Start" 
+                                       VerticalOptions="CenterAndExpand"
+                                       TextColor="Black"
+                                       Padding="30,0"/>
+
+                                <Label Text="{Binding Date}" 
+                                       FontSize="12" 
+                                       HorizontalOptions="EndAndExpand" 
+                                       VerticalOptions="Center"
+                                       Padding="30,0"/>
                             </StackLayout>
+                            
                         </ViewCell.View>
                     </ViewCell>
                 </DataTemplate>

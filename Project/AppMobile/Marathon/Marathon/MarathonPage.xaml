@@ -4,46 +4,44 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Marathon.MarathonPage">
+             x:Class="Marathon.MarathonPage" Title="RunForestRun">
     
     <ContentPage.Content>
         <Grid RowSpacing="0" ColumnSpacing="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.2*"/>
-                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="90" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="120" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="140" />
                 <RowDefinition Height="30" />
                 <RowDefinition Height="30" />
-                <RowDefinition Height="50" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <BoxView Color="White" Grid.Column="0" Grid.Row="0" Grid.RowSpan="6" />
             <BoxView Color="White" Grid.Column="1" Grid.Row="0" />
+            <BoxView Color="White" Grid.Column="1" Grid.Row="4" />
             <BoxView Color="White" Grid.Column="2" Grid.Row="0" />
             <BoxView Color="White" Grid.Column="3" Grid.Row="0" />
-            <BoxView Color="WhiteSmoke" Margin="5" Grid.Column="1" Grid.Row="1" Grid.RowSpan="4"/>
-            <BoxView Color="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" />
+            <BoxView Color="White" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4"/>
+            <BoxView Color="White" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="4" />
             <BoxView Color="White" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" />
-            <BoxView Color="White" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" />
-            <BoxView Color="White" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" />
+            <BoxView Color="WhiteSmoke" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4" />
+            <BoxView Color="WhiteSmoke" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4" />
             <BoxView Color="White" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" />
-            <BoxView Color="#E5FEEB" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" />
+            <BoxView Color="WhiteSmoke" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="4" />
+            <BoxView Color="#E5FEEB" Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="4" />
 
-            <Label  Text="Photo?" 
-                Grid.Row="1"
-                Grid.Column="1"
-                Grid.RowSpan="4"
-                HorizontalTextAlignment="Center" 
-                VerticalTextAlignment="Center" 
-                TextColor="Gray"
-                FontSize="20" />
+
 
             
 
@@ -53,7 +51,7 @@
                 HorizontalTextAlignment="End"
                 Margin="10,0,0,0"
                 VerticalTextAlignment="Center" 
-                TextColor="Black"
+                TextColor="Gray"
                 FontSize="15" />
             
             <Label  Text="{Binding Id}" 
@@ -65,58 +63,158 @@
                 TextColor="Black"
                 FontSize="15" />
 
-            <Label  Text="{Binding Name}" 
+            <Label  Text="Наименование:" 
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center" 
+                Margin="20,0,0,0"
+                TextColor="Gray"
+                FontSize="15" />
+
+            <Label  Text = "{Binding Name}" 
                 Grid.Row="1"
-                Grid.Column="2"
-                Grid.ColumnSpan="2"
-                Padding="10"
-                HorizontalTextAlignment="Start" 
-                VerticalTextAlignment="Center" 
-                TextColor="Black"
-                FontSize="15" />
-
-            <Label  Text="{Binding Text}" 
-                Grid.Row="2"
-                Grid.Column="2"
-                Grid.ColumnSpan="2"
-                Padding="10"
-                HorizontalTextAlignment="Start" 
-                VerticalTextAlignment="Start" 
-                TextColor="Black"
-                FontSize="15" />
-
-            <Label  Text="{Binding Time}" 
-                Grid.Row="3"
-                Grid.Column="2"
-                Grid.ColumnSpan="2"
-                Padding="10,0"
-                HorizontalTextAlignment="Start" 
-                VerticalTextAlignment="Center" 
-                TextColor="Black"
-                FontSize="15" />
-
-            <Label  Text="{Binding }" 
-                Grid.Row="4"
-                Grid.Column="2"
-                Grid.ColumnSpan="2"
-                Padding="10,0"
-                HorizontalTextAlignment="Start" 
-                VerticalTextAlignment="Center" 
-                TextColor="Black"
-                FontSize="15" />
-
-
-           
-
-            <Label  Text="Table" 
-                Grid.Row="6"
                 Grid.Column="0"
                 Grid.ColumnSpan="4"
                 Padding="10"
                 HorizontalTextAlignment="Center" 
-                VerticalTextAlignment="Start" 
-                TextColor="Gray"
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
                 FontSize="30" />
+
+            <Label  Text="Описание марафона:" 
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                Padding="20,0"    
+                FontSize="15" />
+            
+            <Label  Text="{Binding Text}" 
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Padding="20,5,20,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Start" 
+                TextColor="Black"
+                FontSize="17" />
+
+
+            <Label  Text="Время начала:" 
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="15" />
+
+            <Label  Text="{Binding Time}" 
+                Grid.Row="4"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="End" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="17" />
+
+
+            <Label  Text="Дата проведения:" 
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="15" />
+            
+            <Label  Text="{Binding Date}" 
+                Grid.Row="5"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="End" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="17" />
+
+            <Label  Text="Возраст:" 
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="15" />
+
+            <Label  Text="{Binding Age}" 
+                Grid.Row="6"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="End" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="17" />
+
+            <Label  Text="Место проведения:" 
+                Grid.Row="7"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Padding="20,5,0,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="15" />
+
+            <Label  Text="{Binding Adres}" 
+                Grid.Row="7"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="End" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="17" />
+
+            <Label  Text="Организаторы :" 
+                Grid.Row="8"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="17" />
+
+            <Label  Text="{Binding Admins}" 
+                Grid.Row="8"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Padding="20,0"
+                HorizontalTextAlignment="End" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="15" />
+
+
+            <Label  Text="Таблица участников (в разработке)" 
+                Grid.Row="9"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                Padding="90"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                TextColor="Gray"
+                FontSize="20" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

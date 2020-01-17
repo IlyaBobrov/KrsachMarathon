@@ -16,6 +16,8 @@ namespace Marathon
         public MainPage()
         {
             InitializeComponent();
+            image1.Source = ImageSource.FromResource("Marathon.image.man3.jpg");
+            image1.Aspect = Aspect.AspectFill;
         }
 
         private async void Button_Clicked_Create(object sender, EventArgs e)

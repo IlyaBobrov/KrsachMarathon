@@ -11,7 +11,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="image\man2.jpg" />
+    <None Remove="image\man3.jpg" />
+    <None Remove="MarathonBD.sqlite" />
+    <None Remove="UBD.sqlite" />
     <None Remove="UsersBD.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="image\man2.jpg" />
+    <EmbeddedResource Include="image\man3.jpg" />
+    <EmbeddedResource Include="image\man.jpg" />
+    <EmbeddedResource Include="MarathonBD.sqlite" />
+    <EmbeddedResource Include="UBD.sqlite" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,9 +37,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AddMarathon.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Update="AdminPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -8,8 +8,8 @@ namespace Marathon
 {
     public partial class App : Application
     {
-        public const string DATABASE_NAME = "UsersBD.sqlite";
-        public const string DATABASE_NAME_M = "MarathonBD.sqlite";
+        public const string DATABASE_NAME = "UBD.sqlite";
+        //public const string DATABASE_NAME = "MarBD.sqlite";
         
 
         public static UsersClassAsyncRepository database;
@@ -17,12 +17,13 @@ namespace Marathon
         {
             get
             {
+                //database = null;
                 if (database == null)
                 {
                     // путь, по которому будет находиться база данных
                     string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), DATABASE_NAME);
                     // если база данных не существует (еще не скопирована)
-                    if (!File.Exists(dbPath))
+                    if /*(1 == 1)*/(!File.Exists(dbPath))
                     {
                         // получаем текущую сборку
                         var assembly = IntrospectionExtensions.GetTypeInfo(typeof(App)).Assembly;
@@ -42,7 +43,7 @@ namespace Marathon
             }
         }
         
-        public static MarathonClassAsyncRepository databaseM;
+        /*public static MarathonClassAsyncRepository databaseM;
         public static MarathonClassAsyncRepository DatabaseM
         {
             get
@@ -70,12 +71,18 @@ namespace Marathon
                 }
                 return databaseM;
             }
-        }
+        }*/
+
         public App()
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#FFCD4A"),
+                BarTextColor = Color.FromHex("#000000")
+            };
+            
         }
         protected override void OnStart()
         {

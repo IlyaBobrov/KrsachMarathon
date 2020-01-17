@@ -17,4 +17,3 @@ D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Registra
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\ListUsers.xaml.g.cs
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\Developer.xaml.g.cs
-D:\Program Files(VS)\Xamarin\Marathon\Marathon\obj\Debug\netstandard2.0\AddMarathon.xaml.g.cs
