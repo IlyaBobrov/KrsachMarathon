@@ -50,9 +50,9 @@ namespace Marathon
 
         }
 
-        private async  void Button_Clicked_Users(object sender, EventArgs e)
+        private async  void Button_Clicked_Info(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListUsers());
+            await Navigation.PushAsync(new InfoPage());
 
         }
     }
