@@ -4,12 +4,33 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Marathon.Developer">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="Marathon.Developer" Title="Марафоны">
+    <StackLayout>
+        <ListView x:Name="List_Marathon_t" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Name}" 
+                                       FontSize="15" 
+                                       HorizontalOptions="Start" 
+                                       VerticalOptions="CenterAndExpand"
+                                       TextColor="Black"
+                                       Padding="30,0"/>
+
+                                <Label Text="{Binding Date}" 
+                                       FontSize="12" 
+                                       HorizontalOptions="EndAndExpand" 
+                                       VerticalOptions="Center"
+                                       Padding="30,0"/>
+                            </StackLayout>
+                            
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
 </ContentPage>

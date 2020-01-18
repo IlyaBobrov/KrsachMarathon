@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Marathon.AdminPage">
+             x:Class="Marathon.AdminPage" Title="Администратор">
     <ContentPage.Content >
 
         <Grid RowSpacing="0" ColumnSpacing="0">
@@ -45,7 +45,7 @@
                 TextColor="Gray"
                 FontSize="20" />
 
-            <Button  Text="Edit profile" 
+            <Button  Text="Редактировать профиль" 
                 Grid.Column="1" 
                 Grid.Row="5" 
                 FontSize="10"
@@ -63,7 +63,7 @@
                     Margin="10,0,0,0"
                 HorizontalTextAlignment="Start" 
                 VerticalTextAlignment="Center" 
-                TextColor="Black"
+                TextColor="Gray"
                 FontSize="15" />
 
             <Label  Text="Admin name" 
@@ -74,24 +74,24 @@
                 HorizontalTextAlignment="Start" 
                 VerticalTextAlignment="Center" 
                 TextColor="Black"
-                FontSize="15" />
+                FontSize="20" />
 
-            <Label  Text="login" 
+            <Label  Text="login:" 
                 Grid.Row="2"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
                 Padding="10,0"
                 HorizontalTextAlignment="Start" 
                 VerticalTextAlignment="Center" 
-                TextColor="Black"
+                TextColor="Gray"
                 FontSize="15" />
 
-            <Button  Text="Create marathon" 
+            <Button  Text="Создать марафон" 
                 Grid.Row="3"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
                 Padding="10,0"
-                TextColor="Gray"
+                TextColor="Black"
                 FontSize="12"
                 Margin="5,5,5,2.5"     
                 BackgroundColor="#E5FEEB"
@@ -99,28 +99,29 @@
                 Clicked="Button_Clicked">
             </Button>
 
-            <Button Text="Show inventory" 
+            <Button Text="Инвентарь" 
                 Grid.Row="4"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
                 Padding="0"
                 Margin="5,2.5,5,5"
-                BackgroundColor="#FAFFDE"
+                BackgroundColor="#FFE6A6"
                 FontSize="12"
-                TextColor="Gray"
+                TextColor="Black"
                 Clicked="Button_Clicked_1">
             </Button>
 
 
-            <Label  Text="Table" 
+            <Label  Text="Таблица активных и прошедших марафонов 
+                    (в разработке)" 
                 Grid.Row="6"
                 Grid.Column="0"
                 Grid.ColumnSpan="4"
-                Padding="10"
+                Padding="50"
                 HorizontalTextAlignment="Center" 
-                VerticalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
                 TextColor="Gray"
-                FontSize="30" />
+                FontSize="20" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

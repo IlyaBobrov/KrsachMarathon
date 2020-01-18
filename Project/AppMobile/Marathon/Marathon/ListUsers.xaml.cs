@@ -18,11 +18,11 @@ namespace Marathon
         }
         protected override async void OnAppearing()
         {
-            // создание таблицы, если ее нет
+            //создание таблицы, если ее нет
             await App.Database.CreateTable();
-            // привязка данных
+            //привязка данных
             List_Users_t.ItemsSource = await App.Database.GetItemsAsync();
-
+            //
             base.OnAppearing();
         }
         // обработка нажатия элемента в списке

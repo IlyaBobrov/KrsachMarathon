@@ -11,11 +11,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="UsersBD.db" />
+    <None Remove="image\man2.jpg" />
+    <None Remove="image\man3.jpg" />
+    <None Remove="MarathonBD.sqlite" />
+    <None Remove="UBD.sqlite" />
+    <None Remove="UsersBD.sqlite" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="UsersBD.db" />
+    <EmbeddedResource Include="image\man2.jpg" />
+    <EmbeddedResource Include="image\man3.jpg" />
+    <EmbeddedResource Include="image\man.jpg" />
+    <EmbeddedResource Include="MarathonBD.sqlite" />
+    <EmbeddedResource Include="UBD.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="UsersBD.sqlite" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +41,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Developer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="InfoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="ListUsers.xaml">

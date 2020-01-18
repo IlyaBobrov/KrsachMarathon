@@ -16,11 +16,13 @@ namespace Marathon
         public MainPage()
         {
             InitializeComponent();
+            image1.Source = ImageSource.FromResource("Marathon.image.man3.jpg");
+            image1.Aspect = Aspect.AspectFill;
         }
 
-        private async void Button_Clicked_Profile(object sender, EventArgs e)
+        private async void Button_Clicked_Create(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new UserPage());
+            await Navigation.PushAsync(new Developer());
         }
 
         private void Button_Clicked_EE(object sender, EventArgs e)
@@ -48,9 +50,9 @@ namespace Marathon
 
         }
 
-        private async  void Button_Clicked_Users(object sender, EventArgs e)
+        private async  void Button_Clicked_Info(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListUsers());
+            await Navigation.PushAsync(new InfoPage());
 
         }
     }

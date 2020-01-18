@@ -4,123 +4,134 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Marathon.MainPage">
+             x:Class="Marathon.MainPage" BackgroundColor="White" Title="RunForestRun" >
 
-    <ContentPage.Content>
+    <ContentPage.Content >
    
-    <Grid RowSpacing="0" ColumnSpacing="0">
+    <Grid RowSpacing="0" ColumnSpacing="0" >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="100" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             
         </Grid.RowDefinitions>
 
 
-        <BoxView Color="WhiteSmoke" Margin="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <BoxView Color="White" Grid.Row="0" Grid.Column="2"  />
-        <BoxView Color="White" Grid.Row="1" Grid.Column="2"  />
-        <BoxView Color="#FDFFE0" Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="3"/>
-        <BoxView Color="White" Grid.Row="3" Grid.Column="0"  Grid.ColumnSpan="3" />
-        <BoxView Color="#E5FEEB" Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="3"  />
+        <BoxView Color="#FFFFFF"        Margin="5,5,2.5,2.5"   CornerRadius="10" Grid.Row="0" Grid.Column="0" />
+        <BoxView Color="White"      Margin="5,2.5,2.5,2.5" CornerRadius="10" Grid.Row="1" Grid.Column="0"  />
+        <BoxView Color="#FFCD4A"        Margin="5,2.5,2.5,2.5" CornerRadius="10" Grid.Row="2" Grid.Column="0"  />
+        <BoxView Color="White"      Margin="5,2.5,2.5,5"   CornerRadius="10" Grid.Row="3" Grid.Column="0"  />
+        <BoxView Color="White"      Margin="2.5, 5, 5, 2.5"    CornerRadius="10" Grid.Row="0" Grid.Column="1"  />
+            <BoxView Color="#FFCD4A"        Margin="2.5, 2.5, 5, 2.5"  CornerRadius="10" Grid.Row="1" Grid.Column="1"/>
+        <BoxView Color="White"      Margin="2.5, 2.5, 5, 2.5"  CornerRadius="10" Grid.Row="2" Grid.Column="1"  />
+            <BoxView Color="#FFCD4A"        Margin="2.5, 2.5, 5, 5"    CornerRadius="10" Grid.Row="3" Grid.Column="1"  />
 
-
-            <Label  Text="LOGO" 
+             
+            
+        <Label  Text="Marathons" 
                 Grid.Row="0"
-                Padding="10"
                 Grid.Column="0"
-                Grid.ColumnSpan="2"
-                Grid.RowSpan="2"
-                HorizontalTextAlignment="Center" 
-                VerticalTextAlignment="Center" 
-                TextColor="Gray"
-                FontSize="20" />
-
-            <Button Text="Enter/Exit" 
-                Grid.Row="0"
-                Grid.Column="2"
-                TextColor="Black"
-                FontSize="10"
-                BackgroundColor="LightGray"
-                Margin="5,10,10,2.5"
-                Padding="0"
-                Clicked="Button_Clicked_Reg">
-
-            </Button>
-        
-            <Button  Text="Profile" 
-                Grid.Row="1"
-                Grid.Column="2"
-                TextColor="Black"
-                FontSize="10"
-                Margin="5,2.5,10,10"
-                Padding="0"
-                BackgroundColor="LightGray"
-                BorderWidth="0"
-                Clicked="Button_Clicked_Profile">
-
-            </Button>
-
-
-
-            <Label  Text="- - description - -" 
-                Grid.Row="2"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                HorizontalTextAlignment="Center" 
-                VerticalTextAlignment="Center" 
-                TextColor="Black"
-                FontSize="15" />
-
-            <Label  Text="Marathons" 
-                Grid.Row="4"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
                 Padding="10"
                 HorizontalTextAlignment="Center" 
-                VerticalTextAlignment="Start" 
+                VerticalTextAlignment="Center" 
                 TextColor="Gray"
                 FontSize="30" />
+        
+            <Image  x:Name="image1"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="5,5,2.5,2.5"
+                    Source= "man.jpg" />
 
-            <Button Text="test url" 
-                Grid.Row="3"
-                Grid.Column="0"
+
+            <Button  Text="Марафоны" 
+                Grid.Row="0"
+                Grid.Column="1"
                 TextColor="Black"
-                BackgroundColor="LightGray"
-                Margin="10"
+                FontSize="20"
+                Margin="2.5,5,5,5"
+                CornerRadius="10"
                 Padding="0"
-                FontSize="10"
+                BackgroundColor="#B1F2BA"
+                BorderWidth="0"
+                Clicked="Button_Clicked_Create">
+
+            </Button>
+
+
+
+            <Label  Text="Мы рады вас приветствовать на мобильной платформе самого популярного приложения среди бегунов всей страны!" 
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                Margin="10"
+                Padding="10"
+                FontSize="12" />
+
+            <Label  Text="Данное приложение находится на стадии разработки, в случае обнаружения багов, просьба сообщить в поддержку.
+                    Спасибо!)" 
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center"
+                Margin="10"
+                Padding="10"
+                TextColor="Black"
+                FontSize="12" />
+
+            <Label  Text="Xamarin" 
+                Grid.Row="2"
+                Grid.Column="0"
+                Padding="10"
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                TextColor="Black"
+                FontSize="30" />
+
+            <Button Text="Marathon Page
+                    (шаблон)" 
+                Grid.Row="1"
+                Grid.Column="0"
+                TextColor="Gray"
+                BackgroundColor="#B1F2BA"
+                CornerRadius="10"
+                Margin="5,2.5,2.5,2.5"
+                Padding="10"
+                FontSize="18"
                 Clicked="Button_Clicked_Test_UR">
 
             </Button>
-            <Button Text="url Admin" 
-                Grid.Row="3"
+            <Button Text="Admin Page
+                    (шаблон)" 
+                Grid.Row="2"
                 Grid.Column="1"
-                TextColor="Black"
-                BackgroundColor="LightGray"
-                Margin="10"
-                Padding="0"
-                FontSize="10"
+                TextColor="Gray"
+                BackgroundColor="#B1F2BA"
+                CornerRadius="10"
+                Margin="2.5,2.5,5,2.5"
+                Padding="10"
+                FontSize="18"
                 Clicked="Button_Clicked_Admin">
 
             </Button>
         
-            <Button Text="Users" 
+            <Button Text="О системе" 
                 Grid.Row="3"
-                Grid.Column="2"
-                TextColor="Black"
-                BackgroundColor="LightGray"
-                Margin="10"
-                Padding="0"
-                FontSize="10"
-                Clicked="Button_Clicked_Users">
+                Grid.Column="0"
+                TextColor="Gray"
+                BackgroundColor="#B1F2BA"
+                Margin="5,2.5,2.5,5"
+                CornerRadius="10"
+                Padding="10"
+                FontSize="18"
+                Clicked="Button_Clicked_Info">
 
             </Button>
         </Grid>

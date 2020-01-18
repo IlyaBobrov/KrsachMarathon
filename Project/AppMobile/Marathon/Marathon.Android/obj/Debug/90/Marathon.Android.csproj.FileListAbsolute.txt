@@ -486,3 +486,4 @@ D:\Program Files(VS)\Xamarin\Marathon\Marathon.Android\obj\Debug\90\android\asse
 D:\Program Files(VS)\Xamarin\Marathon\Marathon.Android\obj\Debug\90\android\assets\System.Runtime.Extensions.dll
 D:\Program Files(VS)\Xamarin\Marathon\Marathon.Android\obj\Debug\90\android\assets\System.Threading.dll
 D:\Program Files(VS)\Xamarin\Marathon\Marathon.Android\obj\Debug\90\android\assets\System.Threading.Tasks.dll
+D:\Program Files(VS)\Xamarin\Marathon\Marathon.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
